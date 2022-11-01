@@ -1,0 +1,74 @@
+{
+  "products": [
+      {
+          "id":1,
+          "name": "Laptop da Xuxa",
+          "color":"baby pink",
+          "price":1500,
+          "src":"https://imgs.casasbahia.com.br/185321/1xg.jpg?imwidth=292"
+      },
+      {
+          "id":2,
+          "name": "Motorola V3",
+          "color":"purple",
+          "price":2500,
+          "src":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROCH1WFBY1VMZ7YtbatiEZvHfpRRY1oMtmpw&usqp=CAU"
+      },
+      {
+          "id":3,
+          "name": "Tamagotchi",
+          "color":"pink",
+          "price":3000,
+          "src":"https://acessocultural.com.br/wp-content/uploads/2019/09/Tamaghoshi.jpg"
+      },
+      {
+          "id":4,
+          "name": "Hello Kitty Fire",
+          "color":"beautiful pink",
+          "price":2000,
+          "src":"https://d3ugyf2ht6aenh.cloudfront.net/stores/001/339/675/products/1254065121856019118-11-66897f21901ac6effe16631733417863-480-0.jpg"
+      },
+      {
+        "id":6,
+        "name": "Gucci little pocket",
+        "color":"white",
+        "price":2000,
+        "src":"https://cdn-images.farfetch-contents.com/12/66/32/43/12663243_12272212_600.jpg"
+    },
+    {
+        "id":7,
+        "name": "Barbie shoe",
+        "color":"pink",
+        "price":1000,
+        "src":"https://images2.marisa.com.br/medias/sys_master/images/images/haf/h7e/10697614131230/Tamanco-Infantil-Barbie-Trends-Grendene-Kids-21783-null-10032454338-C1.jpg"
+    },
+    {
+        "id":8,
+        "name": "Belinha",
+        "color":"white",
+        "price":2000,
+        "src":"https://static6.depositphotos.com/1004199/565/i/600/depositphotos_5656096-stock-photo-white-poodle-puppy-smiles.jpg"
+    },
+    {
+        "id":9,
+        "name": "poddle poket",
+        "color":"pink",
+        "price":2000,
+        "src":"https://res.cloudinary.com/buzzfeed-brasil/image/upload/q_auto,f_auto/image-uploads/quiz-question-alternative-image/png/56c9c92b7dd9ebdd511cd0f3190c59cd.png"
+    },
+    {
+        "id":10,
+        "name": "Fuffly scholar stuff",
+        "color":"white",
+        "price":1000,
+        "src":"https://3.bp.blogspot.com/-mqi3UiYSUCg/XKlLOQ-4irI/AAAAAAABE1Q/oq1x-JUiOJ4wt13J_FB9O2R2joXH0oZjQCLcBGAs/s1600/4.JPG"
+    },
+    {
+        "id":11,
+        "name": "Britney Spears CD",
+        "color":"white",
+        "price":4000,
+        "src":"https://http2.mlstatic.com/D_NQ_NP_684515-MLB47810426911_102021-O.jpg"
+    }
+  ]
+}
