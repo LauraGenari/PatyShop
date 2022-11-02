@@ -1,11 +1,11 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { cartData } from "../redux/_selectors/selectors";
 
 const Cart = () => {
-    const cartData = useSelector((state) => state.cartData);
-    const amount = cartData.length && cartData.map(item=>item.price*(item.qtd || 1)).reduce((prev, next)=>prev+next)
+    const cart = useSelector(cartData);
+    const amount = cart.length && cart.map(item=>item.price*(item.qtd || 1)).reduce((prev, next)=>prev+next)
 
-    // console.log(group())
     return (<div>
         <div className="go-back"> 
             <img src="https://cdn-icons-png.flaticon.com/512/109/109618.png" alt="back"/>
@@ -23,7 +23,7 @@ const Cart = () => {
                     <td>Total Price</td>
                 </tr>
                 {                    
-                    cartData.map((item) => {
+                    cart.map((item) => {
                         return <tr key={item.key}>
                             <td>{item.name}</td>
                             <td> <img src={item.src} alt="product" height="50px" width="50px"/></td>

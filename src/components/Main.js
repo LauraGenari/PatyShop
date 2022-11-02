@@ -1,16 +1,15 @@
 
-import { addToCart, removeFromCart } from '../redux/cartAction';
+import { addToCart, removeFromCart } from '../redux/_actions/cartAction';
 import { useDispatch } from 'react-redux';
-import { productList } from '../redux/productAction';
+import { productList } from '../redux/_actions/productAction';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
+import { productData } from '../redux/_selectors/selectors'
+
 function Main() {
   const dispatch = useDispatch()
 
-  let data = useSelector((state)=>state.productData)  
-  // console.log('data in main', data)
-  const cartData = useSelector((state) => state.cartData);
-  console.log('cartData in main', cartData)
+  let data = useSelector( productData )  
   useEffect(()=>{
     dispatch(productList())
   }, []);
@@ -24,6 +23,7 @@ function Main() {
           <span>
             <div>
               <img src={item.src} alt="product" height="300px" width="300px"/>
+              <span className="float-qtd">0</span>
               <div>{item.name}</div>
               <div>{item.color}</div>
               <div>{item.price}</div>      

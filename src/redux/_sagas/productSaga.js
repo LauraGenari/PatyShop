@@ -1,5 +1,5 @@
 import { takeEvery, put } from 'redux-saga/effects'
-import { PRODUCT_LIST, SET_PRODUCT_LIST, SEARCH_PRODUCT } from './constant';
+import { PRODUCT_LIST, SET_PRODUCT_LIST, SEARCH_PRODUCT } from '../_constants/constant';
 
 function* getProducts(){
     let data = yield fetch('http://localhost:3000/products')

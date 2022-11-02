@@ -1,4 +1,4 @@
-import { SET_PRODUCT_LIST } from "./constant"
+import { SET_PRODUCT_LIST } from "../_constants/constant"
 
 export const productData = (data=[], action) => {
     switch(action.type){

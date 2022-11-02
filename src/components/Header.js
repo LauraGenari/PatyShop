@@ -1,13 +1,11 @@
 import { useSelector, useDispatch } from "react-redux"
 import { Link } from 'react-router-dom';
-import { productSearch } from '../redux/productAction'
-import { emptyCart } from '../redux/cartAction';
+import { productSearch } from '../redux/_actions/productAction'
+import { emptyCart } from '../redux/_actions/cartAction';
 
 const Header = () => {
     const result = useSelector((state) => state.cartData);
     const dispatch = useDispatch();
-
-    // console.log("data in header", result)
 
     return(
         <div className="header">

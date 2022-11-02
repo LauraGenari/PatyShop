@@ -108,3 +108,17 @@ a {
   width: 20px;
   margin: 0 0.5rem;
 }
+
+.float-qtd {
+  background-color: green;
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  position:relative;
+  color: #fff;
+  bottom: 300px;
+  left: 215px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
