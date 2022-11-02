@@ -2,9 +2,18 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cart{
+  display: flex;
+  align-items: center;
+}
+
+button {
+  border: solid 1px deeppink;
+  background-color: deeppink;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;  
+  cursor: pointer;  
 }
 
 .header{
@@ -13,6 +22,7 @@
   display: flex;
   justify-content: space-around;
 }
+
 .cart-div{
   float: right;
   margin: 30px;
@@ -31,6 +41,7 @@
   right:0px;
   color: #fff;
 }
+
 .search-box{
   display: flex;
   justify-content: space-between;
@@ -41,62 +52,59 @@
   align-self: center;
   width: 700px;
 }
+
 .main-container{
-  display:flex;
-  flex-wrap:wrap
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around
 }
 .main-container span {
   margin: 1.5rem ;
   border: solid gainsboro 1px;
 }
+.main-container div {  
+  display: flex;
+  flex-direction: column;
+}
+.main-container button {  
+  margin: 0.5rem 1rem;
+}
 
 .table-container{  
   display: flex;
-  margin: 0 30px;
+  margin: 0 5vw;
+  justify-content: space-between;
 }
 .table-container table {
-  flex: 35%;
+  width: 40vw;
   border-collapse: collapse;
 }
 .table-container td{
   border: solid gray 1px;
 }
 .price-data{
-  flex: 35%;
-  margin: 0 30px;
+  width: 20vw;
+  padding: 30px;
+  border: solid gray 1px;
+  height: fit-content;
 }
 .price-data div{
   display:flex;
   justify-content:space-around
 }
 
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.go-back {  
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
+  margin: 1rem 0 0 1rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.go-back img{
+  width: 20px;
+  margin: 0 0.5rem;
 }

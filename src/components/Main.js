@@ -9,7 +9,8 @@ function Main() {
 
   let data = useSelector((state)=>state.productData)  
   // console.log('data in main', data)
-
+  const cartData = useSelector((state) => state.cartData);
+  console.log('cartData in main', cartData)
   useEffect(()=>{
     dispatch(productList())
   }, []);
@@ -29,11 +30,8 @@ function Main() {
               <br/> 
               <div>
                 <button onClick={()=>dispatch(addToCart(item))}>Add to cart</button>
-              </div>       
-              <br/>  
-              <div>
-                <button onClick={()=>dispatch(removeFromCart(item.id))}>Remove from cart</button>
-              </div>        
+                <button onClick={()=>dispatch(removeFromCart(item.id))}>Remove from cart</button>       
+              </div>
               <br/> 
             </div>
           </span>

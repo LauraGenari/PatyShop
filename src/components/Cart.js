@@ -7,12 +7,16 @@ const Cart = () => {
 
     // console.log(group())
     return (<div>
-        <button><Link to="/" >Go to Products Link</Link></button>
+        <div className="go-back"> 
+            <img src="https://cdn-icons-png.flaticon.com/512/109/109618.png" alt="back"/>
+            <Link to="/" >Go to Products Link</Link>       
+        </div>
         <h1>Cart Page</h1>
         <div className="table-container">
             <table>
                 <tr>
                     <td>Name</td>
+                    <td>Thumb</td>
                     <td>Color</td>
                     <td>Price</td>
                     <td>Quantity</td>
@@ -22,6 +26,7 @@ const Cart = () => {
                     cartData.map((item) => {
                         return <tr key={item.key}>
                             <td>{item.name}</td>
+                            <td> <img src={item.src} alt="product" height="50px" width="50px"/></td>
                             <td>{item.color}</td>
                             <td>{item.price}</td>
                             <td>{item.qtd || 1}</td>

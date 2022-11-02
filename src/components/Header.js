@@ -17,7 +17,7 @@ const Header = () => {
                 </Link>
                     <input type="text" onChange={(event) => dispatch(productSearch(event.target.value))} placeholder='Search Product' />
                 </div>   
-            <div>
+            <div  className="cart">
                 <div>
                     <button onClick={()=>dispatch(emptyCart())}>Empty Cart</button>
                 </div>
